@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Calendar</title>
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <!-- saving-calculation-area start -->
+        <section class="saving-calculation-area">
+            <div class="container">
+                <h1>budget Calendar</h1>
+                <div class="row">
+                    <div class="col-md-6 col-lg-7">
+                        <div class="thumbnail">
+                            <img src="images/banner.jpg" alt="thumbnail" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-5">
+                        <div class="details">
+                            <div class="income-area">
+                                <h5>income</h5>
+                                <div class="input-area">
+                                    <label for="income">Income</label>
+                                    <input id="income" type="text">
+                                </div>
+                            </div>
+                            <div class="expense-area">
+                                <h5>expense</h5>
+                                <div class="input-area">
+                                    <label for="food">food</label>
+                                    <input class="expense-amount" id="food" type="text">
+                                </div>
+                                <div class="input-area">
+                                    <label for="rent">rent</label>
+                                    <input class="expense-amount" id="rent" type="text">
+                                </div>
+                                <div class="input-area">
+                                    <label for="clothes">clothes</label>
+                                    <input class="expense-amount" id="clothes" type="text">
+                                </div>
+                            </div>
+                            <!-- calculation button -->
+                            <div class="text-center">
+                                <button class="btn btn-info" id="calculation-btn">calculate</button>
+                            </div>
+                            <p id="error"><i>error! please give correct amount</i></p>
+                            <!-- total expense -->
+                            <div class="result-title">
+                                <h5>Total expense: <span id="total-expense">0</span></h5>
+                                <h5>balance: <span id="balance">0</span></h5>
+                            </div>
+                            <!-- saving area -->
+                            <div class="saving-area">
+                                <label>Save</label>
+                                <input id="save" type="text">
+                                <span>%</span>
+                                <button class="btn-sm btn-info" id="save-btn">save</button>
+                            </div>
+                            <p id="errorPercentage"><i>error! please give correct percentage</i></p>
+                            <!-- saving balance -->
+                            <div class="result-title">
+                                <h5>saving amount: <span id="totalSaving">0</span></h5>
+                                <h5>remaining balance: <span id="remainBalance">0</span></h5>
+                            </div>
+                            <p id="errorsaving"><i>error! Your balance is low</i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- saving-calculation-area end -->
+    </main>
+    
+   
+    <script src="js/app.js"></script>
+</body>
+</html>

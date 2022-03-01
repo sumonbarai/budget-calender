@@ -1,0 +1,101 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+.saving-calculation-area {
+    background-color: #fff;
+}
+.saving-calculation-area h1 {
+   text-align: center;
+   font-weight: 500;
+   text-transform: capitalize;
+   margin: 20px;
+}
+/* thumbnail area */
+.thumbnail img {
+    height: 681px;
+    width: 100%;
+    object-fit: cover;
+}
+/* details area */
+.details {
+    background-color: #ecf0f1;
+    padding: 50px;
+}
+h5 {
+    font-size: 25px;
+    text-transform: capitalize;
+}
+.input-area {
+    margin: 5px 0;
+}
+.input-area label {
+    width: 30%;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+input{
+    width: 65%;
+    padding: 5px 10px;
+    border-radius: 2px;
+    border: none;
+    color: #34A3BB;
+}
+input:focus{
+    outline: 2px solid #34A3BB;
+    caret-color: #34A3BB;
+}
+.btn {
+    font-size: 20px;
+    text-transform: capitalize;
+}
+#calculation-btn {
+    margin: 25px 0;
+}
+/* saving area */
+.saving-area label {
+    width: 8%;
+    font-size: 25px;
+    text-transform: capitalize;
+    
+}
+.saving-area input {
+    width: 20%;
+    margin-left: 35px;
+}
+.saving-area span {
+    width: 5%;
+    margin: 0 3px;
+    font-size: 25px;
+}
+.saving-area button {
+    border: none;
+    font-size: 18px;
+    text-transform: capitalize;
+    padding: 5px 30px;
+}
+.result-title {
+    margin: 20px 0;
+}
+/* error */
+#error {
+    color: red;
+    text-transform: capitalize;
+    display: none;
+}
+#errorPercentage{
+    margin-top: 5px;
+    color: red;
+    text-transform: capitalize;
+    display: none;
+}
+#errorsaving{
+    margin-top: 5px;
+    color: red;
+    text-transform: capitalize;
+    display: none;
+}
